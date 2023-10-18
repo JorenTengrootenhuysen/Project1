@@ -1,0 +1,241 @@
+/*
+#eff0eb achtergrond
+#9d948d card
+#75697a
+#7a7a82
+#303038
+https://nl.wix.com/website-template/view/html/2622?originUrl=https%3A%2F%2Fnl.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fportfolio-cv%2Fpersonal&tpClick=view_button&esi=d58eecb0-6c68-4b05-8b1c-aa53b86820ff
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+
+
+html {
+    background-color: #eff0eb;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    min-height: 100vh;
+}
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #adaca0;
+}
+
+h2 {
+    color: #464137;
+}
+
+main {
+    background-color: #eff0eb;
+}
+
+.main_home {
+    display: flex;
+    background: linear-gradient(90deg, rgba(157,148,141,1) 40%, rgba(239,240,235,1) 40%);
+}
+
+
+/*nav balk*/
+
+nav{
+    display: flex;
+    padding-left: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #eff0eb;
+}
+
+.nav_name{
+    align-self: flex-start;
+    flex-grow: 4;
+}
+
+.nav_ulist{
+    display: flex;
+    align-self: flex-end;
+}
+
+.nav_list {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav_link{
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
+.nav_link:hover{
+    text-decoration: underline;
+    transition: ease-in 2s;
+}
+
+
+.main_home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home_text{
+    flex-grow: 1;
+    margin-right: 30%;
+}
+
+/*Bewerking welkom kaart*/
+
+.card{
+    flex-grow: 4;
+    background-color: #eff0eb;
+    box-shadow: -10px 10px 10px 10px rgba(0,0,0,0.1);
+    margin: 30px;
+    margin-left: 20%;
+    border-radius: 15px;
+}
+
+.card_info{
+    background-color: #9d948d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+}
+
+.card_image{
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.card_title{
+    font-size: 35px;
+    margin: 15px;
+    color: white;
+}
+
+.card_subtitle{
+    color: #303038
+}
+
+.card_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #eff0eb;
+    color: black;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.card_links{
+    color: black;
+    list-style: none;
+    margin: 10px 20px 10px 10px;
+}
+
+/* Homepage links naar ervaring CV */
+
+.welkom_link{
+    text-decoration: none;
+    border: #464137 solid 3px;
+    margin: 50px 20px 50px 0px;
+    padding: 8px 20px 8px 20px;
+    border-radius: 50px;
+    background-color: #464137;
+    color: white;
+    transition: 0.3s;
+}
+
+.welkom_link:hover{
+    transition: 0.3s;
+    background-color: #eff0eb;
+    color: #464137;
+}
+
+
+/* Footer */
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p{
+    font-size: 14px;
+}
+
+.footer_gemaakt{
+    align-self: flex-start;
+    flex-grow: 2;
+}
+
+.footer_bel{
+    align-self: flex-end;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.footer_mail{
+    align-self: flex-end;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.footer_volg{
+    align-self: flex-end;
+    text-align: center;
+    flex-grow: 2;
+}
+
+/* CV pagina */
+
+.cv{
+    display: flex;
+    flex-direction: column;
+    background-color: #9d948d;
+    align-items: center;
+}
+
+.cv_card{
+    max-width: 60%;
+    border: solid black 3px;
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.cv_cardtitel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titels_cv{
+    color: #eff0eb;
+    font-size: 50px;
+}
+
+.cv_fotos{
+    mix-blend-mode: color-burn;
+    margin: 20px;
+    max-width: 130px;
+}
